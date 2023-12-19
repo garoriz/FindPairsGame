@@ -8,35 +8,57 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/shapeableImageView"
-        android:layout_width="@dimen/x4"
-        android:layout_height="@dimen/x4"
+        style="@style/ImageViewCoin"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="@dimen/x1"
         android:src="@drawable/coin"
-        app:layout_constraintBottom_toTopOf="@id/iv_game_logo"
         app:layout_constraintEnd_toStartOf="@id/tv_count_of_money"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_count_of_money"
+        style="@style/Text.Size24.Bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/x1"
         android:layout_marginEnd="@dimen/x5"
-        android:textSize="@dimen/size_24"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/iv_game_logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/shapeableImageView"
         tools:text="100" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_game_logo"
         android:layout_width="@dimen/x32"
         android:layout_height="@dimen/x32"
+        android:layout_marginTop="@dimen/x16"
         android:src="@drawable/game_logo"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shapeableImageView"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_play"
+        style="@style/Button"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/play"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_game_logo"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageButton
+        android:id="@+id/ib_privacy_policy"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_privacy_policy_btn"
+        android:src="@drawable/baseline_privacy_tip_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_play"
+        app:layout_constraintVertical_bias=".7" />
 </androidx.constraintlayout.widget.ConstraintLayout>

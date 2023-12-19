@@ -4,4 +4,25 @@
     <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
         <item name="cornerSize">10%</item>
     </style>
+
+    <style name="ImageViewCoin">
+        <item name="android:layout_width">@dimen/x4</item>
+        <item name="android:layout_height">@dimen/x4</item>
+    </style>
+
+    <style name="Text" parent="TextAppearance.AppCompat" />
+
+    <style name="Text.Size24">
+        <item name="android:textSize">@dimen/size_24</item>
+    </style>
+
+    <style name="Text.Size24.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textSize">@dimen/size_24</item>
+        <item name="backgroundTint">?attr/colorPrimaryBtn</item>
+        <item name="android:textColor">?attr/colorPrimaryText</item>
+    </style>
 </resources>
