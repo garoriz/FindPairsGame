@@ -1,4 +1,4 @@
-package com.garif.gamefindpairs.feature.menuview
+package com.garif.gamefindpairs.feature.gamescene.presentation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.garif.gamefindpairs.R
 
-class MenuViewFragment : Fragment(R.layout.fragment_menu_view) {
+class GameSceneFragment : Fragment(R.layout.fragment_game_scene) {
 
 }
