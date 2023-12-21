@@ -3,6 +3,7 @@
     <style name="Base.Theme.GameFindPairs" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimaryBtn">@color/purple</item>
         <item name="colorPrimaryText">@color/black</item>
+        <item name="colorTimer">@color/white</item>
     </style>
 
     <style name="Theme.GameFindPairs" parent="Base.Theme.GameFindPairs" />

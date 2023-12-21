@@ -9,9 +9,8 @@
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/shapeableImageView"
         style="@style/ImageViewCoin"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="@dimen/x7"
         android:layout_marginEnd="@dimen/x1"
-        android:src="@drawable/coin"
         app:layout_constraintEnd_toStartOf="@id/tv_count_of_money"
         app:layout_constraintTop_toTopOf="parent" />
 

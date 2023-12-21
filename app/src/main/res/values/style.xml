@@ -8,12 +8,41 @@
     <style name="ImageViewCoin">
         <item name="android:layout_width">@dimen/x4</item>
         <item name="android:layout_height">@dimen/x4</item>
+        <item name="android:src">@drawable/coin</item>
+    </style>
+
+    <style name="ImageViewCard">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:src">@drawable/card</item>
     </style>
 
     <style name="Text" parent="TextAppearance.AppCompat" />
 
     <style name="Text.Size24">
         <item name="android:textSize">@dimen/size_24</item>
+    </style>
+
+    <style name="Text.Size16">
+        <item name="android:textSize">@dimen/size_16</item>
+    </style>
+
+    <style name="Text.Size16.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Size20">
+        <item name="android:textSize">@dimen/size_20</item>
+    </style>
+
+    <style name="Text.Size20.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Size20.Bold.Timer">
+        <item name="android:paddingVertical">@dimen/x1</item>
+        <item name="android:paddingHorizontal">@dimen/x5</item>
+        <item name="android:background">@drawable/background_timer</item>
     </style>
 
     <style name="Text.Size24.Bold">
@@ -24,5 +53,10 @@
         <item name="android:textSize">@dimen/size_24</item>
         <item name="backgroundTint">?attr/colorPrimaryBtn</item>
         <item name="android:textColor">?attr/colorPrimaryText</item>
+    </style>
+
+    <style name="ImageViewTimer">
+        <item name="android:elevation">@dimen/x1</item>
+        <item name="android:src">@drawable/timer</item>
     </style>
 </resources>

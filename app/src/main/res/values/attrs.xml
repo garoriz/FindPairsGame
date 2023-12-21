@@ -2,4 +2,5 @@
 <resources>
     <attr name="colorPrimaryBtn" format="color" />
     <attr name="colorPrimaryText" format="color" />
+    <attr name="colorTimer" format="color" />
 </resources>

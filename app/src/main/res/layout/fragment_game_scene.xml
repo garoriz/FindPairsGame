@@ -1,14 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:background="#00FF00"
     tools:context=".feature.gamescene.presentation.GameSceneFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:id="@+id/iv_timer"
+        style="@style/ImageViewTimer"
+        android:layout_width="@dimen/x5"
+        android:layout_height="@dimen/x5"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/x7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tv_timer"
+        style="@style/Text.Size20.Bold.Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x5"
+        app:layout_constraintStart_toStartOf="@id/iv_timer"
+        app:layout_constraintTop_toTopOf="@id/iv_timer"
+        tools:text="00:10" />
+
+    <TextView
+        android:id="@+id/tv_less_time_more_reward"
+        style="@style/Text.Size16.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x1"
+        android:text="@string/less_time_more_reward"
+        app:layout_constraintStart_toStartOf="@id/iv_timer"
+        app:layout_constraintTop_toBottomOf="@id/tv_timer" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        style="@style/ImageViewCoin"
+        android:layout_marginTop="@dimen/x7"
+        android:layout_marginEnd="@dimen/x1"
+        app:layout_constraintEnd_toStartOf="@id/tv_count_of_money"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_count_of_money"
+        style="@style/Text.Size24.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/x1"
+        android:layout_marginEnd="@dimen/x5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/shapeableImageView"
+        tools:text="100" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card1"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_less_time_more_reward" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card2"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card3"
+        app:layout_constraintStart_toEndOf="@id/iv_card1"
+        app:layout_constraintTop_toBottomOf="@id/tv_less_time_more_reward" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card3"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card4"
+        app:layout_constraintStart_toEndOf="@id/iv_card2"
+        app:layout_constraintTop_toBottomOf="@id/tv_less_time_more_reward" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card4"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_card3"
+        app:layout_constraintTop_toBottomOf="@id/tv_less_time_more_reward" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card5"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_card1" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card6"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card7"
+        app:layout_constraintStart_toEndOf="@id/iv_card5"
+        app:layout_constraintTop_toBottomOf="@id/iv_card2" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card7"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card8"
+        app:layout_constraintStart_toEndOf="@id/iv_card6"
+        app:layout_constraintTop_toBottomOf="@id/iv_card3" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card8"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_card7"
+        app:layout_constraintTop_toBottomOf="@id/iv_card4" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card9"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_card5" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card10"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card11"
+        app:layout_constraintStart_toEndOf="@id/iv_card9"
+        app:layout_constraintTop_toBottomOf="@id/iv_card6" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card11"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card10"
+        app:layout_constraintStart_toEndOf="@id/iv_card12"
+        app:layout_constraintTop_toBottomOf="@id/iv_card7" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card12"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_card11"
+        app:layout_constraintTop_toBottomOf="@id/iv_card8" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card13"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_card9" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card14"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card15"
+        app:layout_constraintStart_toEndOf="@id/iv_card13"
+        app:layout_constraintTop_toBottomOf="@id/iv_card10" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card15"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card16"
+        app:layout_constraintStart_toEndOf="@id/iv_card14"
+        app:layout_constraintTop_toBottomOf="@id/iv_card11" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card16"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_card15"
+        app:layout_constraintTop_toBottomOf="@id/iv_card12" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card17"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_card13" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card18"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card19"
+        app:layout_constraintStart_toEndOf="@id/iv_card17"
+        app:layout_constraintTop_toBottomOf="@id/iv_card14" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card19"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_card20"
+        app:layout_constraintStart_toEndOf="@id/iv_card18"
+        app:layout_constraintTop_toBottomOf="@id/iv_card15" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_card20"
+        style="@style/ImageViewCard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_card19"
+        app:layout_constraintTop_toBottomOf="@id/iv_card16" />
+</androidx.constraintlayout.widget.ConstraintLayout>
