@@ -3,4 +3,5 @@
     <string name="play">Play</string>
     <string name="shared_preferences_name">coins</string>
     <string name="less_time_more_reward">Less time, more reward!</string>
+    <string name="keep_matching_up_two_of_the_same_objects_until_there_are_no_more_to_be_paired_and_you_clear_the_board">Keep matching up two of the same objects until there are no more to be paired and you clear the board</string>
 </resources>
