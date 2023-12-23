@@ -13,7 +13,7 @@
         android:layout_width="@dimen/x5"
         android:layout_height="@dimen/x5"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="@dimen/x7"
+        android:layout_marginTop="@dimen/x1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,7 +39,7 @@
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/shapeableImageView"
         style="@style/ImageViewCoin"
-        android:layout_marginTop="@dimen/x7"
+        android:layout_marginTop="@dimen/x1"
         android:layout_marginEnd="@dimen/x1"
         app:layout_constraintEnd_toStartOf="@id/tv_count_of_money"
         app:layout_constraintTop_toTopOf="parent" />
@@ -224,6 +224,7 @@
         android:layout_marginTop="@dimen/x1"
         android:gravity="center"
         android:text="@string/keep_matching_up_two_of_the_same_objects_until_there_are_no_more_to_be_paired_and_you_clear_the_board"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_card20" />

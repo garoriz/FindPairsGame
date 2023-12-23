@@ -18,5 +18,14 @@
         android:id="@+id/gameSceneFragment"
         android:name="com.garif.gamefindpairs.feature.gamescene.presentation.GameSceneFragment"
         android:label="fragment_game_scene"
-        tools:layout="@layout/fragment_game_scene" />
+        tools:layout="@layout/fragment_game_scene" >
+        <action
+            android:id="@+id/action_gameSceneFragment_to_endGamePopupFragment"
+            app:destination="@id/endGamePopupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endGamePopupFragment"
+        android:name="com.garif.gamefindpairs.feature.endgamepopup.presentation.EndGamePopupFragment"
+        android:label="fragment_end_game_popup"
+        tools:layout="@layout/fragment_end_game_popup" />
 </navigation>
