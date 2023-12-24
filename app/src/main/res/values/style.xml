@@ -42,7 +42,7 @@
 
     <style name="Text.Size20.Bold.Timer">
         <item name="android:paddingVertical">@dimen/x1</item>
-        <item name="android:paddingHorizontal">@dimen/x5</item>
+        <item name="android:paddingEnd">@dimen/x2</item>
         <item name="android:background">@drawable/background_timer</item>
     </style>
 

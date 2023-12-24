@@ -3,6 +3,7 @@ package com.garif.gamefindpairs.feature.gamescene.presentation
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.TransitionDrawable
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.view.View
 import android.widget.ImageView
 import androidx.core.content.res.ResourcesCompat
@@ -21,6 +22,17 @@ class GameSceneFragment : Fragment(R.layout.fragment_game_scene) {
     private lateinit var binding: FragmentGameSceneBinding
     private lateinit var cardIds: MutableList<Int>
     private lateinit var selectedCards: MutableList<Pair<ShapeableImageView, Int>>
+    private val countDownTimer = object : CountDownTimer(60000, 1000) {
+
+        override fun onTick(millisUntilFinished: Long) {
+            binding.tvTimer.text = (binding.tvTimer.text.toString().toInt() - 1).toString()
+        }
+
+        override fun onFinish() {
+            view?.findNavController()
+                ?.navigate(R.id.action_gameSceneFragment_to_endGamePopupFragment)
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,6 +66,7 @@ class GameSceneFragment : Fragment(R.layout.fragment_game_scene) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentGameSceneBinding.bind(view)
+        countDownTimer.start()
 
         with(binding) {
             setImageInCard(ivCard1, cardIds[0])

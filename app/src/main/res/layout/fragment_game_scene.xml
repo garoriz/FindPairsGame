@@ -20,11 +20,13 @@
     <TextView
         android:id="@+id/tv_timer"
         style="@style/Text.Size20.Bold.Timer"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/x10"
         android:layout_height="@dimen/x5"
+        android:includeFontPadding="false"
+        android:text="@string/_60"
+        android:textAlignment="viewEnd"
         app:layout_constraintStart_toStartOf="@id/iv_timer"
-        app:layout_constraintTop_toTopOf="@id/iv_timer"
-        tools:text="00:10" />
+        app:layout_constraintTop_toTopOf="@id/iv_timer" />
 
     <TextView
         android:id="@+id/tv_less_time_more_reward"
