@@ -13,17 +13,17 @@
         android:layout_width="@dimen/x5"
         android:layout_height="@dimen/x5"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="@dimen/x1"
+        android:layout_marginTop="@dimen/x5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_timer"
         style="@style/Text.Size20.Bold.Timer"
-        android:layout_width="@dimen/x10"
+        android:layout_width="112dp"
         android:layout_height="@dimen/x5"
         android:includeFontPadding="false"
-        android:text="@string/_60"
+        android:text="@string/_02_00"
         android:textAlignment="viewEnd"
         app:layout_constraintStart_toStartOf="@id/iv_timer"
         app:layout_constraintTop_toTopOf="@id/iv_timer" />
@@ -41,7 +41,7 @@
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/shapeableImageView"
         style="@style/ImageViewCoin"
-        android:layout_marginTop="@dimen/x1"
+        android:layout_marginTop="@dimen/x5"
         android:layout_marginEnd="@dimen/x1"
         app:layout_constraintEnd_toStartOf="@id/tv_count_of_money"
         app:layout_constraintTop_toTopOf="parent" />
@@ -60,7 +60,7 @@
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_card1"
         style="@style/ImageViewCard"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/x8"
         app:layout_constraintEnd_toStartOf="@id/iv_card2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_less_time_more_reward" />
@@ -68,7 +68,7 @@
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_card2"
         style="@style/ImageViewCard"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/x8"
         app:layout_constraintEnd_toStartOf="@id/iv_card3"
         app:layout_constraintStart_toEndOf="@id/iv_card1"
         app:layout_constraintTop_toBottomOf="@id/tv_less_time_more_reward" />
@@ -76,66 +76,66 @@
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_card3"
         style="@style/ImageViewCard"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@id/iv_card4"
+        android:layout_marginTop="@dimen/x8"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/iv_card2"
         app:layout_constraintTop_toBottomOf="@id/tv_less_time_more_reward" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_card4"
         style="@style/ImageViewCard"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/iv_card3"
-        app:layout_constraintTop_toBottomOf="@id/tv_less_time_more_reward" />
+        android:layout_marginTop="@dimen/x2"
+        app:layout_constraintEnd_toStartOf="@id/iv_card5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_card1" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_card5"
         style="@style/ImageViewCard"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toStartOf="@id/iv_card6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_card1" />
+        app:layout_constraintStart_toEndOf="@id/iv_card4"
+        app:layout_constraintTop_toBottomOf="@id/iv_card2" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_card6"
         style="@style/ImageViewCard"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@id/iv_card7"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/iv_card5"
-        app:layout_constraintTop_toBottomOf="@id/iv_card2" />
+        app:layout_constraintTop_toBottomOf="@id/iv_card3" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_card7"
         style="@style/ImageViewCard"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toStartOf="@id/iv_card8"
-        app:layout_constraintStart_toEndOf="@id/iv_card6"
-        app:layout_constraintTop_toBottomOf="@id/iv_card3" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_card4" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_card8"
         style="@style/ImageViewCard"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_card9"
         app:layout_constraintStart_toEndOf="@id/iv_card7"
-        app:layout_constraintTop_toBottomOf="@id/iv_card4" />
+        app:layout_constraintTop_toBottomOf="@id/iv_card5" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_card9"
         style="@style/ImageViewCard"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@id/iv_card10"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_card5" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_card8"
+        app:layout_constraintTop_toBottomOf="@id/iv_card6" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_card10"
         style="@style/ImageViewCard"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toStartOf="@id/iv_card11"
-        app:layout_constraintStart_toEndOf="@id/iv_card9"
-        app:layout_constraintTop_toBottomOf="@id/iv_card6" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_card7" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_card11"
@@ -143,7 +143,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toStartOf="@id/iv_card10"
         app:layout_constraintStart_toEndOf="@id/iv_card12"
-        app:layout_constraintTop_toBottomOf="@id/iv_card7" />
+        app:layout_constraintTop_toBottomOf="@id/iv_card8" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_card12"
@@ -151,71 +151,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/iv_card11"
-        app:layout_constraintTop_toBottomOf="@id/iv_card8" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/iv_card13"
-        style="@style/ImageViewCard"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@id/iv_card14"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_card9" />
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/iv_card14"
-        style="@style/ImageViewCard"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@id/iv_card15"
-        app:layout_constraintStart_toEndOf="@id/iv_card13"
-        app:layout_constraintTop_toBottomOf="@id/iv_card10" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/iv_card15"
-        style="@style/ImageViewCard"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@id/iv_card16"
-        app:layout_constraintStart_toEndOf="@id/iv_card14"
-        app:layout_constraintTop_toBottomOf="@id/iv_card11" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/iv_card16"
-        style="@style/ImageViewCard"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/iv_card15"
-        app:layout_constraintTop_toBottomOf="@id/iv_card12" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/iv_card17"
-        style="@style/ImageViewCard"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@id/iv_card18"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_card13" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/iv_card18"
-        style="@style/ImageViewCard"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@id/iv_card19"
-        app:layout_constraintStart_toEndOf="@id/iv_card17"
-        app:layout_constraintTop_toBottomOf="@id/iv_card14" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/iv_card19"
-        style="@style/ImageViewCard"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@id/iv_card20"
-        app:layout_constraintStart_toEndOf="@id/iv_card18"
-        app:layout_constraintTop_toBottomOf="@id/iv_card15" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/iv_card20"
-        style="@style/ImageViewCard"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/iv_card19"
-        app:layout_constraintTop_toBottomOf="@id/iv_card16" />
 
     <TextView
         android:id="@+id/tv_game_description"
@@ -229,5 +166,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_card20" />
+        app:layout_constraintTop_toBottomOf="@id/iv_card12" />
 </androidx.constraintlayout.widget.ConstraintLayout>

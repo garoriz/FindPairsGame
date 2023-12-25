@@ -52,8 +52,8 @@
 
     <style name="Button">
         <item name="android:textSize">@dimen/size_24</item>
-        <item name="backgroundTint">?attr/colorPrimaryBtn</item>
-        <item name="android:textColor">?attr/colorPrimaryText</item>
+        <item name="backgroundTint">@color/purple</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="ImageViewTimer">
